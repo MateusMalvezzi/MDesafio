@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: yellow;
+}
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.6fr 1.4fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "purchase-order store-name store-name store-name store-name value"
+      "suplier suplier suplier suplier suplier suplier"
+      "ship-to ship-to bill-to bill-to charge-to charge-to";
+    width: 100%;
+    height: 100vh;
+  }
+
+  .purchase-order { 
+    grid-area: purchase-order; 
+    border: 1px solid red;
+}
+
+  .store-name { grid-area: store-name; 
+    border: 1px solid red;
+}
+
+  .value { grid-area: value;
+    border: 1px solid red;
+ }
+
+  .suplier { grid-area: suplier; 
+    border: 1px solid red;
+}
+
+  .ship-to { grid-area: ship-to; 
+    border: 1px solid red;
+}
+
+  .bill-to { grid-area: bill-to; 
+    border: 1px solid red;
+}
+
+  .charge-to { grid-area: charge-to;
+    border: 1px solid red;
+ }
