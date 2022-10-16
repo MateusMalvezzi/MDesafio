@@ -7,7 +7,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 body{
     font-family: 'Open Sans', sans-serif;
-    background: yellow;
 }
 
 .container {  display: grid;
@@ -23,31 +22,105 @@ body{
     height: 100vh;
   }
 
-  .purchase-order { 
+.purchase-order { 
     grid-area: purchase-order; 
-    border: 1px solid red;
+    background:#028dcd;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    width: 300px;
+    margin-top: 25px;
+}
+.purchase-order .order{
+  padding: 8px 0px 20px 50px;
+  width: 200px;
+  border-radius: 15px;
 }
 
-  .store-name { grid-area: store-name; 
-    border: 1px solid red;
+.store-name { grid-area: store-name; 
+    height: auto;
+    padding: 0;
+  }
+.store-name .title{
+    padding:0px 0px;
+    font-weight: 600;
+    font-size: 1.9rem;
+    margin: 0px;
 }
 
-  .value { grid-area: value;
-    border: 1px solid red;
+.value { grid-area: value; }
+.value .price-currency{
+  font-weight: 600;
+  font-size: 1.9rem;
+  margin-bottom: 0px;
+  margin-top: 13px;
  }
+ .value .status{
+  color: #F5A623;
+  font-weight: 600;
+  font-size: 1.3em;
+  margin: 20px 0px;
+ }
+ .value .create{
+  margin-top: 0px;
+  font-size: 0.9rem;
+ }
+ 
+ .suplier { grid-area: suplier; 
+  box-shadow: 2px 5px 19px rgb(108 108 108 / 25%);    
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  display:flex;
+}
+.suplier .info-general{
+  margin: 10px;
+  border: 1px solid red;
 
-  .suplier { grid-area: suplier; 
-    border: 1px solid red;
+}
+.suplier .info-contact{
+  border: 1px solid red;
+
+}
+.suplier .info-read{
+  border: 1px solid rgb(0, 17, 255);
+  margin: 10px;
+
+
 }
 
-  .ship-to { grid-area: ship-to; 
-    border: 1px solid red;
+
+.footer{
+  display:flex;
 }
 
-  .bill-to { grid-area: bill-to; 
+.ship-to { grid-area: ship-to; 
     border: 1px solid red;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 2px 5px 19px rgb(108 108 108 / 25%);
 }
 
-  .charge-to { grid-area: charge-to;
-    border: 1px solid red;
+.bill-to { grid-area: bill-to; 
+  border: 1px solid red;
+  border-radius: 8px;
+  margin-top: 20px;
+  padding: 20px;
+  box-shadow: 2px 5px 19px rgb(108 108 108 / 25%);
+}
+
+.charge-to { grid-area: charge-to;
+  border: 1px solid red;
+  border-radius: 8px;
+  margin-top: 20px;
+  padding: 20px;
+  box-shadow: 2px 5px 19px rgb(108 108 108 / 25%);
+ }
+ 
+ body #app .info-api {
+  font-size: 0.9rem;
+  margin: auto;
+  padding: 0.5em 0px;
  }

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
 
-    <MyHeader />
+    <MyProject />
 
   </div>
 </template>
@@ -9,12 +9,12 @@
 <script>
 import '../src/styles/global.css';
 
-import MyHeader from './components/MyHeader.vue'
+import MyProject from './components/MyProject.vue'
 
 export default {
   name: 'App',
   components: {
-    MyHeader
+    MyProject
   }
 }
 </script>
