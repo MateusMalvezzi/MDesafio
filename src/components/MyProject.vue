@@ -14,7 +14,7 @@
             <div class="store-name">
                 <p class="title">{{ informations.header.buyer }}</p>
                 <p class="info-api">{{ informations.header.contact.name }}</p>
-                <p class="info-api" style="text-decoration: underline; color: #0A8CCC">{{ informations.header.contact.email }}</p>
+                <p class="info-api" style="text-decoration: underline; color: rgb(10, 140, 204);">{{ informations.header.contact.email }}</p>
                 <p class="info-api">{{ informations.header.contact.phone }}</p>
                 <p class="info-api">{{ informations.header.contact.fax }}</p>
             </div>
@@ -26,9 +26,10 @@
 
             <!-- SUPPLIER -->
             <div class="suplier">
-                <p class="title-supplier">Supplier</p>
-                <p class="info-api">{{informations.supplier.name}}</p>
-                <p class="info-api">{{informations.supplier.code}}</p>
+                <div class="suplier-address">
+                    <p class="title-suplier">Supplier</p>
+                    <p class="subtitle-suplier"><span>{{ informations.supplier.name}}</span><span class="code-suplier">Code #{{informations.supplier.code}}</span></p>
+                </div>
                 <div class=info-general>
                     <p>{{informations.supplier.document.value}}</p>
                     <p>{{informations.supplier.address}}</p>
@@ -46,8 +47,6 @@
             </div>
 
             <!-- FOOTER -->
-            <h2 class="title-footer">Addresses</h2>
-            <footer class="footer">
                 <div class="ship-to">
                     <h2 class="subtitle-footer">{{ informations.addresses[0].label }}</h2>
                     <h3>{{ informations.addresses[0].name }}</h3>
@@ -72,7 +71,6 @@
                     <p class="info-api">{{ informations.addresses[2].contact.email }}</p>
                     <p class="info-api">{{ informations.addresses[2].contact.phone }} {{ informations.addresses[2].contact.fax }}</p>
                 </div>
-            </footer>
         </div>
     </div>
 </template>

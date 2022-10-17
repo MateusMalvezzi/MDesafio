@@ -23,31 +23,49 @@ body{
   }
 
 .purchase-order { 
-    grid-area: purchase-order; 
-    background:#028dcd;
-    color: rgb(0, 0, 0);
-    position: absolute;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    width: 300px;
-    margin-top: 25px;
+  position: absolute;
+  display: inline-flex;
+  margin-top: 25px;
 }
 .purchase-order .order{
-  padding: 8px 0px 20px 50px;
-  width: 200px;
-  border-radius: 15px;
+  padding: 8px 50px 20px 100px;
+  width: 300px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  color: #FFFFFF;
+  background-color: #0A8CCC;
+}
+.purchase-order .title-purchase{
+  font-size: 1.0rem;
+    margin: 3px 0px;
+}
+.purchase-order .number{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0px;
+}
+.purchase-order .serial{
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 3px 0px 0px;
+  font-style: italic;
 }
 
+
 .store-name { grid-area: store-name; 
-    height: auto;
-    padding: 0;
+  margin-left: 200px;
   }
 .store-name .title{
-    padding:0px 0px;
-    font-weight: 600;
-    font-size: 1.9rem;
-    margin: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  font-weight: 600;
+  font-size: 1.9rem;
+  margin: 0px;
 }
+.store-name .info-api{
+
+}
+
 
 .value { grid-area: value; }
 .value .price-currency{
@@ -67,12 +85,35 @@ body{
   font-size: 0.9rem;
  }
  
+
+
+
+
  .suplier { grid-area: suplier; 
-  box-shadow: 2px 5px 19px rgb(108 108 108 / 25%);    
   padding: 20px;
   border-radius: 8px;
   margin-top: 20px;
-  display:flex;
+  -webkit-box-shadow: 2px 5px 19px rgb(108 108 108 / 25%);
+  box-shadow: 2px 5px 19px rgb(108 108 108 / 25%);
+}
+
+.suplier .suplier-address .title-suplier {
+  color: #919191;
+  margin: 0;
+}
+.suplier .suplier-address .subtitle-suplier {
+  font-weight: bold;
+  color: #0A8CCC;
+  margin-top: 8px;
+}
+.suplier .suplier-address .code-suplier {
+  background-color: #73cefca8;
+  color: #8A8A8A;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 11px;
+  margin-left: 4px;
 }
 .suplier .info-general{
   margin: 10px;
@@ -86,14 +127,9 @@ body{
 .suplier .info-read{
   border: 1px solid rgb(0, 17, 255);
   margin: 10px;
-
-
 }
 
 
-.footer{
-  display:flex;
-}
 
 .ship-to { grid-area: ship-to; 
     border: 1px solid red;
@@ -121,6 +157,5 @@ body{
  
  body #app .info-api {
   font-size: 0.9rem;
-  margin: auto;
   padding: 0.5em 0px;
  }
